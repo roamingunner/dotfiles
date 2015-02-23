@@ -554,10 +554,10 @@ abbreviate zl zilongshanren
 "}}}
 
 " tab navigation like firefox{{{
-nnoremap <leader><tab> :tabnext<CR>
-nnoremap <C-t>     :tabnew<CR>
-inoremap <leader><tab>   <Esc>:tabnext<CR>i
-inoremap <C-t>     <Esc> :tabnew<CR>
+" nnoremap <leader><tab> :tabnext<CR>
+" nnoremap <C-t>     :tabnew<CR>
+" inoremap <leader><tab>   <Esc>:tabnext<CR>i
+" inoremap <C-t>     <Esc> :tabnew<CR>
 "}}}
 
 "configs for vimwiki"{{{
