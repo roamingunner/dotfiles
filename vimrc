@@ -285,7 +285,7 @@ let g:syntastic_enable_balloons = 1
 
 "set colorscheme {{{
 syntax enable
-colorscheme blackboard
+colorscheme ego
 if has("gui_running")
 colorscheme solarized
 let s:uname = system("uname")
@@ -634,20 +634,20 @@ inoremap <C-S> <C-O>:update<CR>
 
 "change you complete me plugin default mappings"{{{
 "refer to this blog post :http://0x3f.org/blog/make-youcompleteme-ultisnips-compatible/
-
+" Fixme: comment these settings to solve Tab inserting messy code
 "if your os is win, then disable the ycm plugin
-if os=="win"
-let g:loaded_youcompleteme = 1
-endif
-let g:ycm_key_list_select_completion = ['<C-TAB>', '<Down>']
-let g:ycm_key_list_previous_completion = ['<C-S-TAB>', '<Up>']
-let g:SuperTabDefaultCompletionType = '<C-Tab>'
-nnoremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR>
-let g:ycm_confirm_extra_conf = 1
-let g:ycm_global_ycm_extra_conf="~/.vim/.ycm_extra_conf.py"
-let g:tern_show_argument_hints='on_hold'
-let g:indent_guides_start_level = 2
-let g:indent_guides_guide_size = 1
+" if os=="win"
+" let g:loaded_youcompleteme = 1
+" endif
+" let g:ycm_key_list_select_completion = ['<C-TAB>', '<Down>']
+" let g:ycm_key_list_previous_completion = ['<C-S-TAB>', '<Up>']
+" let g:SuperTabDefaultCompletionType = '<C-Tab>'
+" nnoremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR>
+" let g:ycm_confirm_extra_conf = 1
+" let g:ycm_global_ycm_extra_conf="~/.vim/.ycm_extra_conf.py"
+" let g:tern_show_argument_hints='on_hold'
+" let g:indent_guides_start_level = 2
+" let g:indent_guides_guide_size = 1
 "}}}
 
 "add gist plgin {{{
