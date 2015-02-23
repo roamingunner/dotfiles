@@ -537,14 +537,14 @@ endfunction
 " choose python3 for python compiler
 " call SingleCompile#ChooseCompiler('python', 'python3')
 
-noremap  <silent> <F7> :Parse<cr>
-noremap  <silent> <F8> :ClangCheck<cr>
-noremap  <silent> <F9> :SCCompile<cr>
-noremap  <silent> <F10> :SCCompileRun<cr>
-noremap! <silent> <F7> <c-o>:Parse<cr>
-noremap! <silent> <F8> <c-o>:ClangCheck<cr>
-noremap! <silent> <F9> <c-o>:SCCompile<cr>
-noremap! <silent> <F10> <c-o>:SCCompileRun<cr>
+" noremap  <silent> <F7> :Parse<cr>
+" noremap  <silent> <F8> :ClangCheck<cr>
+" noremap  <silent> <F9> :SCCompile<cr>
+" noremap  <silent> <F10> :SCCompileRun<cr>
+" noremap! <silent> <F7> <c-o>:Parse<cr>
+" noremap! <silent> <F8> <c-o>:ClangCheck<cr>
+" noremap! <silent> <F9> <c-o>:SCCompile<cr>
+" noremap! <silent> <F10> <c-o>:SCCompileRun<cr>
 "}}}
 
 
@@ -666,4 +666,9 @@ nmap <Leader>gr <Plug>GitGutterRevertHunk
 "key maps for vim-airline {{{
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
+"}}}
+
+"buffers explorer map{{{
+nnoremap <F9> :bn<CR>
+nnoremap <F10> :bp<CR>
 "}}}
