@@ -27,7 +27,7 @@ You can refer to [this link](https://github.com/Valloric/YouCompleteMe) for more
 
     2. After downloading, you should clone this repository at your home directory. Here is the instructions.
 
-    git clone https://github.com/andyque/dotvim.git
+    git clone https://github.com/roamingunner/dotvim.git
 
     3. copy the _vimrc file in the *dotvim* directory to your $Home$ directory
 
