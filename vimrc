@@ -669,6 +669,32 @@ let g:airline_powerline_fonts = 1
 "}}}
 
 "buffers explorer map{{{
-nnoremap <F9> :bn<CR>
-nnoremap <F10> :bp<CR>
+nmap <F9> :bn<CR>
+nmap <F10> :bp<CR>
 "}}}
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" cscope setting
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+if has("cscope")
+  set csprg=/usr/bin/cscope
+  set csto=1
+  set cst
+  set nocsverb
+  " add any database in current directory
+  if filereadable("cscope.out")
+      cs add cscope.out
+  endif
+  set csverb
+endif
+
+nmap <F11>s :cs find s <C-R>=expand("<cword>")<CR><CR>
+nmap <F11>g :cs find g <C-R>=expand("<cword>")<CR><CR>
+nmap <F11>c :cs find c <C-R>=expand("<cword>")<CR><CR>
+nmap <F11>t :cs find t <C-R>=expand("<cword>")<CR><CR>
+nmap <F11>e :cs find e <C-R>=expand("<cword>")<CR><CR>
+nmap <F11>f :cs find f <C-R>=expand("<cfile>")<CR><CR>
+nmap <F11>i :cs find i ^<C-R>=expand("<cfile>")<CR>$<CR>
+nmap <F11>d :cs find d <C-R>=expand("<cword>")<CR><CR>
+
