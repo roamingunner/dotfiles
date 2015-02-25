@@ -561,6 +561,14 @@ abbreviate zl zilongshanren
 "}}}
 
 "configs for vimwiki"{{{
+let vimwiki_path=$HOME.'/personalwiki'
+let vimwiki_html_path=$HOME.'/wiki_html'
+let g:vimwiki_list = [{'path_html':vimwiki_html_path,
+                       \ 'path':vimwiki_path,
+                       \ 'template_path':vimwiki_html_path.'/assets',
+                       \ 'template_default': 'default',
+                       \ 'template_ext': '.tpl',
+                       \ 'auto_export': 1}]
 "}}}
 
 "keymaping for HardMode plugin {{{
