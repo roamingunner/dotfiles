@@ -288,6 +288,8 @@ syntax enable
 colorscheme ego
 if has("gui_running")
 colorscheme solarized
+set guifontset=
+set guifont=Consolas:h14
 let s:uname = system("uname")
 if s:uname == "Darwin\n"
 set guifont=PowerlineSymbols
