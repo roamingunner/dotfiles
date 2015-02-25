@@ -188,8 +188,8 @@ nmap <leader>bf :BufExplorer<cr>
 nmap <silent> <leader>n :NERDTreeToggle <CR>
 let NERDTreeShowHidden=1
 " bufkill bd's: really do not mess with NERDTree buffer
-nnoremap <silent> <backspace> :BD<cr>
-nnoremap <silent> <s-backspace> :BD!<cr>
+" nnoremap <silent> <backspace> :BD<cr>
+" nnoremap <silent> <s-backspace> :BD!<cr>
 
 " Prevent :bd inside NERDTree buffer
 au FileType nerdtree cnoreabbrev <buffer> bd <nop>
@@ -561,10 +561,6 @@ abbreviate zl zilongshanren
 "}}}
 
 "configs for vimwiki"{{{
-"I don't use vimwiki anymore. Now I am using emacs org-mode to manage my personal life
-"nmap <leader>5 :VimwikiAll2HTML<cr>
-"let g:vimwiki_list = [{'path':  '/Users/guanghui/workspace/myblog/octopress/source/vimwiki/',  
-"            \ 'path_html': '/Users/guanghui/workspace/myblog/octopress/source/vimwiki_html/'}]
 "}}}
 
 "keymaping for HardMode plugin {{{
@@ -687,14 +683,14 @@ if has("cscope")
       cs add cscope.out
   endif
   set csverb
+  nmap <f11>s :cs find s <c-r>=expand("<cword>")<cr><cr>
+  nmap <f11>g :cs find g <c-r>=expand("<cword>")<cr><cr>
+  nmap <f11>c :cs find c <c-r>=expand("<cword>")<cr><cr>
+  nmap <f11>t :cs find t <c-r>=expand("<cword>")<cr><cr>
+  nmap <f11>e :cs find e <c-r>=expand("<cword>")<cr><cr>
+  nmap <f11>f :cs find f <c-r>=expand("<cfile>")<cr><cr>
+  nmap <f11>i :cs find i ^<c-r>=expand("<cfile>")<cr>$<cr>
+  nmap <f11>d :cs find d <c-r>=expand("<cword>")<cr><cr>
 endif
 
-nmap <F11>s :cs find s <C-R>=expand("<cword>")<CR><CR>
-nmap <F11>g :cs find g <C-R>=expand("<cword>")<CR><CR>
-nmap <F11>c :cs find c <C-R>=expand("<cword>")<CR><CR>
-nmap <F11>t :cs find t <C-R>=expand("<cword>")<CR><CR>
-nmap <F11>e :cs find e <C-R>=expand("<cword>")<CR><CR>
-nmap <F11>f :cs find f <C-R>=expand("<cfile>")<CR><CR>
-nmap <F11>i :cs find i ^<C-R>=expand("<cfile>")<CR>$<CR>
-nmap <F11>d :cs find d <C-R>=expand("<cword>")<CR><CR>
 
