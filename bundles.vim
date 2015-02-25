@@ -71,3 +71,5 @@ Bundle  'a.vim'
 " Bundle  'calendar.vim--Matsumoto'
 " Bundle  'DoxygenToolkit.vim'
 " Bundle  'ZoomWin'
+
+Bundle 'vimwiki'
