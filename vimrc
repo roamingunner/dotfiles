@@ -85,7 +85,7 @@ set tabstop=4        " tab width is 4 spaces
 set shiftwidth=4     " indent also with 4 spaces
 set softtabstop=4
 set noexpandtab
-set list			 "show tab
+set list			 " show tab
 set textwidth=80
 set relativenumber
 set t_Co=256
@@ -109,7 +109,6 @@ nnoremap K ,
 vnoremap K ,
 set laststatus=2
 set pastetoggle=<F2>
-set nolist
 syntax on
 "}}}
 
