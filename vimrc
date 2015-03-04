@@ -84,7 +84,8 @@ set autoindent
 set tabstop=4        " tab width is 4 spaces
 set shiftwidth=4     " indent also with 4 spaces
 set softtabstop=4
-set expandtab
+set noexpandtab
+set list			 "show tab
 set textwidth=80
 set relativenumber
 set t_Co=256
@@ -285,15 +286,16 @@ let g:syntastic_enable_balloons = 1
 
 "set colorscheme {{{
 syntax enable
-colorscheme ego
 if has("gui_running")
-colorscheme solarized
-set guifontset=
-set guifont=Consolas:h14
-let s:uname = system("uname")
-if s:uname == "Darwin\n"
-set guifont=PowerlineSymbols
-endif
+	colorscheme solarized
+	set guifontset=
+	set guifont=Consolas:h14
+	let s:uname = system("uname")
+		if s:uname == "Darwin\n"
+			set guifont=PowerlineSymbols
+		endif
+else
+	colorscheme ego
 endif
 "}}}
 
