@@ -77,9 +77,9 @@ set fenc=utf-8
 set termencoding=utf-8
 set fileencodings=utf-8
 set encoding=utf-8  "if not set, the powerline plugins won't work 
-if os == "win"
-    set fileencoding=chinese
-endif
+" if os == "win"
+"     set fileencoding=chinese
+" endif
 set autoindent
 set tabstop=4        " tab width is 4 spaces
 set shiftwidth=4     " indent also with 4 spaces
