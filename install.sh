@@ -10,15 +10,15 @@
 
 echo "Install vim configurations..."
 
-echo "cd to .vim directory"
-cd ~/.vim
-
-
 echo "create .vimrc"
-rm ~/.vimrc
-rm ~/.gvimrc
-ln -s ~/.vim/vimrc ~/.vimrc
-ln -s ~/.vim/vimrc ~/.gvimrc
+PWD=`pwd`
+rm ~/.vimrc -rf
+rm ~/.vim -rf
+rm ~/.gvimrc -rf
+
+ln -s ${PWD}/vimrc ~/.vimrc
+ln -s ${PWD}/vimrc ~/.gvimrc
+ln -s ${PWD} ~/.vim
 
 #echo "update submodules"
 git submodule init

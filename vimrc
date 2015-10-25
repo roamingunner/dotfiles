@@ -676,8 +676,8 @@ let g:airline_powerline_fonts = 1
 "}}}
 
 "buffers explorer map{{{
-nmap <F9> :bn<CR>
-nmap <F10> :bp<CR>
+nmap <tab> :bn<CR>
+nmap <s-tab> :bp<CR>
 "}}}
 
 
@@ -694,14 +694,14 @@ if has("cscope")
       cs add cscope.out
   endif
   set csverb
-  nmap <f11>s :cs find s <c-r>=expand("<cword>")<cr><cr>
-  nmap <f11>g :cs find g <c-r>=expand("<cword>")<cr><cr>
-  nmap <f11>c :cs find c <c-r>=expand("<cword>")<cr><cr>
-  nmap <f11>t :cs find t <c-r>=expand("<cword>")<cr><cr>
-  nmap <f11>e :cs find e <c-r>=expand("<cword>")<cr><cr>
-  nmap <f11>f :cs find f <c-r>=expand("<cfile>")<cr><cr>
-  nmap <f11>i :cs find i ^<c-r>=expand("<cfile>")<cr>$<cr>
-  nmap <f11>d :cs find d <c-r>=expand("<cword>")<cr><cr>
+  nmap <leader>cs :cs find s <c-r>=expand("<cword>")<cr><cr>
+  nmap <leader>cg :cs find g <c-r>=expand("<cword>")<cr><cr>
+  nmap <leader>cc :cs find c <c-r>=expand("<cword>")<cr><cr>
+  nmap <leader>ct :cs find t <c-r>=expand("<cword>")<cr><cr>
+  nmap <leader>ce :cs find e <c-r>=expand("<cword>")<cr><cr>
+  nmap <leader>cf :cs find f <c-r>=expand("<cfile>")<cr><cr>
+  nmap <leader>ci :cs find i ^<c-r>=expand("<cfile>")<cr>$<cr>
+  nmap <leader>cd :cs find d <c-r>=expand("<cword>")<cr><cr>
 endif
 
 
